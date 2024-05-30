@@ -1,0 +1,434 @@
+{
+  "contractName": "IOrderProcess",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "orderId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum OrderStatus",
+          "name": "_status",
+          "type": "uint8"
+        }
+      ],
+      "name": "updateOrderStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"orderId\",\"type\":\"uint256\"},{\"internalType\":\"enum OrderStatus\",\"name\":\"_status\",\"type\":\"uint8\"}],\"name\":\"updateOrderStatus\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IOrderProcess.sol\":\"IOrderProcess\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IOrderProcess.sol\":{\"keccak256\":\"0xc55e2dde87856126c84f54f2c5ded5190a1fd7d1175ed15d0fe2ddb61f475204\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://bf7e73b80775fa7725fbd5caa11b6fed615c7826d52b18212f02d2e2f11f2a7d\",\"dweb:/ipfs/QmcPgsmvLj8QzVFPW85hMLpp5Gipj1otwxkyoFJoCLarmU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\n\r\n// IOrderProcess.sol\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\nenum OrderStatus { Placed, Preparing, Ready, Completed, Refunded }\r\n\r\ninterface IOrderProcess {\r\n    function updateOrderStatus(uint orderId, OrderStatus _status) external;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\mibra\\PROJ2\\contracts\\IOrderProcess.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IOrderProcess.sol",
+    "exportedSymbols": {
+      "IOrderProcess": [
+        41
+      ],
+      "OrderStatus": [
+        33
+      ]
+    },
+    "id": 42,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 27,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "61:31:2"
+      },
+      {
+        "canonicalName": "OrderStatus",
+        "id": 33,
+        "members": [
+          {
+            "id": 28,
+            "name": "Placed",
+            "nodeType": "EnumValue",
+            "src": "115:6:2"
+          },
+          {
+            "id": 29,
+            "name": "Preparing",
+            "nodeType": "EnumValue",
+            "src": "123:9:2"
+          },
+          {
+            "id": 30,
+            "name": "Ready",
+            "nodeType": "EnumValue",
+            "src": "134:5:2"
+          },
+          {
+            "id": 31,
+            "name": "Completed",
+            "nodeType": "EnumValue",
+            "src": "141:9:2"
+          },
+          {
+            "id": 32,
+            "name": "Refunded",
+            "nodeType": "EnumValue",
+            "src": "152:8:2"
+          }
+        ],
+        "name": "OrderStatus",
+        "nodeType": "EnumDefinition",
+        "src": "96:66:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 41,
+        "linearizedBaseContracts": [
+          41
+        ],
+        "name": "IOrderProcess",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "aab3196d",
+            "id": 40,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateOrderStatus",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 35,
+                  "mutability": "mutable",
+                  "name": "orderId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 40,
+                  "src": "224:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "224:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37,
+                  "mutability": "mutable",
+                  "name": "_status",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 40,
+                  "src": "238:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_OrderStatus_$33",
+                    "typeString": "enum OrderStatus"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 36,
+                    "name": "OrderStatus",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33,
+                    "src": "238:11:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_OrderStatus_$33",
+                      "typeString": "enum OrderStatus"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "223:35:2"
+            },
+            "returnParameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "267:0:2"
+            },
+            "scope": 41,
+            "src": "197:71:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 42,
+        "src": "166:105:2"
+      }
+    ],
+    "src": "61:212:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IOrderProcess.sol",
+      "exportedSymbols": {
+        "IOrderProcess": [
+          41
+        ],
+        "OrderStatus": [
+          33
+        ]
+      },
+      "license": "GPL-3.0"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".0",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 27,
+        "name": "PragmaDirective",
+        "src": "61:31:2"
+      },
+      {
+        "attributes": {
+          "canonicalName": "OrderStatus",
+          "name": "OrderStatus"
+        },
+        "children": [
+          {
+            "attributes": {
+              "name": "Placed"
+            },
+            "id": 28,
+            "name": "EnumValue",
+            "src": "115:6:2"
+          },
+          {
+            "attributes": {
+              "name": "Preparing"
+            },
+            "id": 29,
+            "name": "EnumValue",
+            "src": "123:9:2"
+          },
+          {
+            "attributes": {
+              "name": "Ready"
+            },
+            "id": 30,
+            "name": "EnumValue",
+            "src": "134:5:2"
+          },
+          {
+            "attributes": {
+              "name": "Completed"
+            },
+            "id": 31,
+            "name": "EnumValue",
+            "src": "141:9:2"
+          },
+          {
+            "attributes": {
+              "name": "Refunded"
+            },
+            "id": 32,
+            "name": "EnumValue",
+            "src": "152:8:2"
+          }
+        ],
+        "id": 33,
+        "name": "EnumDefinition",
+        "src": "96:66:2"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            41
+          ],
+          "name": "IOrderProcess",
+          "scope": 42
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "aab3196d",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "updateOrderStatus",
+              "overrides": null,
+              "scope": 41,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "orderId",
+                      "overrides": null,
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 34,
+                        "name": "ElementaryTypeName",
+                        "src": "224:4:2"
+                      }
+                    ],
+                    "id": 35,
+                    "name": "VariableDeclaration",
+                    "src": "224:12:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_status",
+                      "overrides": null,
+                      "scope": 40,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "enum OrderStatus",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "OrderStatus",
+                          "referencedDeclaration": 33,
+                          "type": "enum OrderStatus"
+                        },
+                        "id": 36,
+                        "name": "UserDefinedTypeName",
+                        "src": "238:11:2"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "VariableDeclaration",
+                    "src": "238:19:2"
+                  }
+                ],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "223:35:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 39,
+                "name": "ParameterList",
+                "src": "267:0:2"
+              }
+            ],
+            "id": 40,
+            "name": "FunctionDefinition",
+            "src": "197:71:2"
+          }
+        ],
+        "id": 41,
+        "name": "ContractDefinition",
+        "src": "166:105:2"
+      }
+    ],
+    "id": 42,
+    "name": "SourceUnit",
+    "src": "61:212:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.0+commit.9e61f92b.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-01-06T18:54:50.765Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
