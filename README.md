@@ -1,0 +1,1 @@
+# FastCoin-smart-contract
